@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Nika Chuzhoy
+  CS 132 Spring 2024
+  Date: June 13, 2024
+  This is the contact page for an E-commerce store selling vintage postcards.
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="utils.js"></script>
+  <script defer src="contact.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html" id="home">Postcards</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+  <h2 id="feedback-response" class="hidden"></h2>
+  <form id="contact-form">
+    <h2>Your feedback is important to us!</h2>
+    <section id="email-area">
+      <label for="email">Your email:</label>
+      <input type="email" id="email" name="email" required>
+    </section>
+
+    <section id="response-ok">
+      <p>May we contact you at this email about your feedback?</p>
+      <section id="response-options">
+        <section id="yes-response">
+          <label for="yes-contact">Yes</label>
+          <input type="radio" id="yes-contact" name="contactOK" value="yes" required>
+        </section>
+        <section id="no-response">
+          <label for="no-contact">No</label>
+          <input type="radio" id="no-contact" name="contactOK" value="no">
+        </section>
+      </section>
+    </section>
+
+    <p>What would you like to share with us?</p>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit" id="submit-btn">Send</button>
+  </form>
+</body>
+</html>

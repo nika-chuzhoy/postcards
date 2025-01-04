@@ -1,0 +1,14 @@
+[
+    {
+        "email": "test@d",
+        "contactOK": "no",
+        "message": "awefd",
+        "timestamp": "Thu, 13 Jun 2024 21:06:55 GMT"
+    },
+    {
+        "email": "warren.buffet@gmail.com",
+        "contactOK": "yes",
+        "message": "I was overwhelmed by the choice of postcards!",
+        "timestamp": "Mon, 17 Jun 2024 18:11:12 GMT"
+    }
+]

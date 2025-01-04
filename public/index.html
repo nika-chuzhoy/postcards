@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Nika Chuzhoy
+  CS 132 Spring 2024
+  Date: Jun3 13, 2024
+  This is the main page for an E-commerce store selling vintage postcards.
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Vintage Postcards</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="utils.js"></script>
+  <script defer src="store.js"></script>
+</head>
+<body>
+  <nav>
+      <a href="index.html" id="home">Postcards</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart</a>
+  </nav>
+
+  <header>
+      <h1>Vintage Postcards</h1>
+  </header>
+
+  <section id="filter-search">
+      <label for="country-filter">Country:</label>
+      <select id="country-filter">
+        <option value="Australia">Australia</option>
+        <option value="Austria-Hungary">Austria-Hungary</option>
+        <option value="Belgium">Belgium</option>
+        <option value="China">China</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Egypt">Egypt</option>
+        <option value="France">France</option>
+        <option value="Gabon">Gabon</option>
+        <option value="Germany">Germany</option>
+        <option value="Greece">Greece</option>
+        <option value="Guinea">Guinea</option>
+        <option value="Ivory_Coast">Ivory Coast</option>
+        <option value="Japan">Japan</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Mali">Mali</option>
+        <option value="Malta">Malta</option>
+        <option value="Norway">Norway</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Serbia">Serbia</option>
+        <option value="Sri_Lanka">Sri Lanka</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Venezuela">Venezuela</option>        
+      </select>
+  </section>
+
+  <section id="product-cards">
+    <!-- Cards go here -->
+  </section>
+
+  <section id="card-popup" class="hidden">
+    <section id="exit">x</section>
+    <section id="card-container">
+      <!-- Single card goes here -->
+    </section>
+    <form id="order-form">
+      <section id="order">
+        <section id="quantity-select">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" value="1" min="1" max="100" required>
+        </section>
+      
+        <p>Select a size:</p>
+        <section id="size-select">
+          <section id="small-option">
+            <label for="size-1">4.25"x6"</label>
+            <input type="radio" id="size-1" name="size" value="small" checked>
+          </section>
+          <section id="large-option">
+            <label for="size-2">9"x12"</label>
+            <input type="radio" id="size-2" name="size" value="large">
+          </section>
+        </section>
+      </section>
+    
+      <section id="buy-now">
+        <section id="total-price">$1.00</section>
+        <section id="arrival-date">Arrives in 5-7 Business Days</section>
+        <button type="submit" id="add-cart" value="Add to Cart"> Add to Cart </button>
+      </section>
+    </form>
+  </section> 
+</body>
+</html>

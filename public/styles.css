@@ -1,0 +1,276 @@
+/**
+  Name: Nika Chuzhoy
+  CS 132 Spring 2024
+  Date: June 13, 2024
+  This is the styles.css page for an E-commerce 
+  store selling vintage postcards.
+*/
+
+body, .delete {
+  background-color: #f2eeda;
+}
+
+body, nav a {
+  color: #333;
+}
+
+body, #add-cart, #submit-btn {
+  font-family: Georgia, Times, serif;
+}
+
+nav, #product-cards, #display-cards, .card, .card .purchase-info, #card-popup, #order-form, #order, #buy-now, #contact-form, #email-area, #message, #response-ok, #response-options, #size-select, #cart, #faq-container, #items .item {
+  display: flex;
+}
+
+
+#order-form, #contact-form, #email-area, #message, #response-ok, nav, #card-popup, #faq-container {
+  align-items: center;
+}
+
+#order-form {
+  height: 100%;
+}
+
+nav, #filter-search {
+  background-color: #e8e3cc;
+}
+
+nav {
+  padding: 10px 20px;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav #home {
+  width: 90%;
+}
+
+header {
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+h1 {
+  border-bottom: 3px dotted #333;
+  border-top: 3px dotted #333;
+  display: inline-block;
+  padding: 10px;
+}
+
+#filter-search {
+  padding: 10px;
+  padding-left: 30px;
+}
+
+#country-filter {
+  margin-left: 30px;
+}
+
+#product-cards, #display-cards, #cart {
+  justify-content: space-around;
+}
+
+#product-cards, #display-cards {
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card, #card-popup, #item-summary, #all-orders {
+  box-shadow: 0px 0px 5px #333;
+}
+
+.card {
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.card, #order, #buy-now, #contact-form, #response-ok, #message, #faq-container {
+  flex-direction: column;
+}
+
+#product-cards .card:hover, #exit:hover {
+  transform: scale(1.02);
+  cursor: grab;
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+}
+
+.card .purchase-info, nav, #order-form {
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: small;
+}
+
+.date {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.new, #buy-now, #total, #checkout, nav a, #question{
+  font-weight: bold;
+}
+
+#order, #buy-now {
+  font-size: 20px;
+}
+
+.hidden, #card-popup.hidden, #contact-form.hidden {
+  display: none;
+}
+
+#quantity-select {
+  margin-bottom: 10px;
+}
+
+#card-popup {
+  padding-left: 20px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 80vw;
+  height: 80vh;
+  background-color: #e3e3e3;
+  z-index: 2;
+  min-width: 750px;
+  min-height: 400px;
+}
+
+#card-popup #exit {
+  left: 15px;
+  top: 10px;
+  position: fixed;
+  font-size: xx-large;
+}
+
+.delete, #submit-btn, #add-cart, #checkout {
+  cursor: pointer;
+}
+
+.delete {
+  font-size: large;
+  margin: 10px 0px;
+  padding: 5px;
+}
+
+#order {
+  margin-left: 30px;
+}
+
+
+#buy-now {
+  margin-right: 30px;
+}
+
+#email-area, #message, #response-ok {
+  padding: 15px;
+}
+
+label {
+  margin: 5px;
+}
+
+#yes-response, #no-response, #small-option, #large-option {
+  padding: 0 20px;
+}
+
+#small-option {
+  padding-left: 0;
+}
+
+#submit-btn {
+  padding: 10px;
+  margin: 20px;
+  width: 400px;
+  font-size: 20px;
+}
+
+#add-cart {
+  font-size: 20px;
+}
+
+textarea {
+  width: 500px;
+  height: 150px;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  margin-left: 0;
+  margin-right: 5;
+}
+
+#arrival-date, #add-cart {
+  margin-top: 20px;
+}
+
+#buy-now {
+  background-color: #dbd9d9;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  height: 92%;
+}
+
+#item-summary, #all-orders {
+  background: #e3e3e3;
+}
+
+#all-orders, #order-form {
+  flex-grow: 1;
+}
+
+#all-orders {
+  margin: 0 30px;
+}
+
+#item-summary {
+  padding: 10px;
+  width: 400px;
+}
+
+#items .item {
+  border-bottom: 1px solid #333;
+  padding: 10px;
+}
+
+#total, #checkout {
+  font-size: 18px;
+  text-align: right;
+  padding: 10px;
+}
+
+#cart {
+  margin-top: 30px;
+}
+
+#cart #display-cards .card:hover {
+  cursor: default;
+}
+
+.item span {
+  margin: 5px;
+}
+
+.faq {
+  width: 350px;
+}

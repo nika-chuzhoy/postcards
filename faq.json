@@ -1,0 +1,8 @@
+[
+    { "question": "How long does shipping take?", "answer": "Shipping takes 5-7 business days." },
+    { "question": "Do you ship internationally?", "answer": "Yes, we ship everywhere." },
+    { "question": "What is your return policy?", "answer": "Unfortunately, we do not accept returns." },
+    { "question": "Will new postcards be added to the store?", "answer": "Yes, new items are added once a month." },
+    { "question": "Can I buy items from this store?", "answer": "No." },
+    { "question": "Do you sell stamps as well?", "answer": "No, you'll have to find those elsewhere." }
+]
