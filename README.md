@@ -1,3 +1,8 @@
+<i> Demo ecommerce website selling postcards. Created for CS 132 at Caltech. </i>
+<p align="center">
+  <img src="public/main-page.png" height="300">
+</p>
+
 ## Setup
 
 Install dependencies:
